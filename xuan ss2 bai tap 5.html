@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>bài 1:</b>Tạo bảng có chứa thoong tin sản phẩm trong cửa hàng của bạn</p>
+    <h1><b>MY STORE</b></h1>
+    <table border>
+        <tr>
+            <th>Item photo</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+        <tr> 
+            <td><img src="./cam,.jpg" alt="cam" width="100" height="100"></td>
+            <td>oranges</td>
+            <td>$1 ea.</td>
+        </tr>
+        <tr>
+            <td><img src="./táo.jpg" </td>
+            <td>bananas</td>
+            <td>$0,75/lb</td>
+        </tr>
+         <tr>
+            <td><img src="./lựu.jpg" alt="lê" width="100" height="100"></td>
+            <td>pomegranates</td>
+            <td>3 for 5$</td>
+        </tr>
+        <tr>
+            <td><img src="./táo.jpg" </td>
+            <td>gummy bears</td>
+            <td>$6 per bag</td>
+        </tr>
+         <tr>
+            <td><img src="./suplor.webp" alt="lê" width="100" height="100"></td></td>
+            <td>broccoli</td>
+            <td>$3 a head</td>
+        </tr>
+    </table>
+<p><b>bài 2:</b>Tạo form đặt phòng khách sạn</p>
+<h1><b>Booking Form</b></h1>
+<form action="/submit-booking" method="post">
+<label for="name">Name</label>
+    <input id="Name" type="text"> 
+    <br>
+    <label for="email">Email</label>
+    <input id="Email" type="email">
+    <br>
+    <label for="phone">Phone</label>
+    <input id="Phone" type="tel"> 
+    <br>
+    <label for="date"></label>Date</label>
+    <input type ="date" id ="date"><br>
+    <label for="time">Time</label>
+    <input type="time" id="time">
+<br>
+    <label for="guests">Number of Guests</label>
+    <input type="number" id="guests" min="1" max="10">
+<br>
+     <input type="submit" value="Submit">
+
+     <p>bài 3: tạo form mua xe</p>
+     <h1>Car Purchase Form</h1>
+     <label for="name">Name</label>
+    <input id="Name" type="text"> 
+    <br>
+    <label for="email">Email</label>
+    <input id="Email" type="email">
+    <br>
+    <label for="phone">Phone</label>
+    <input id="Phone" type="tel"> 
+    <br>
+     <label for="choose a car">Choose a Car</label>
+    <select id="choose a car">
+        <option value="model 1">model 1</option>
+        <option value="model 2">model 2</option>
+    </select> 
+    <br>
+    <label for="choose a color">Choose a Color</label>
+    <select id="choose a color">
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+    </select> 
+    <br>
+     <label for="quantity">Quantity</label>
+    <input id="quantity" type="number" min="1">
+    <br>
+    <label for="date"></label>Date</label>
+    <input type ="date" id ="date">
+    <br>
+     <input type="submit" value="Submit">
+</body>
+</html>
