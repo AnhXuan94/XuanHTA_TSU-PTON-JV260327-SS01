@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is CSS?</title>
+
+    <!-- Internal Style -->
+    <style>
+        /* Hàng thứ 2 - màu đỏ */
+        .p2 {
+            color: red;
+        }
+
+        /* Tiêu đề h1 - màu cam nhạt  */
+        h1 {
+            margin-top: 20px;
+            color: rgba(246, 163, 11, 0.759); /* Cam nhạt */
+        }
+    </style>
+
+    <!-- External Style Link -->
+    <link rel="stylesheet" href="xuan ss4 bai tap 5.css">
+</head>
+<body>
+
+    <h1>What is CSS?</h1>
+
+    <!-- Hàng 1: Inline style - màu xanh dương -->
+    <div>
+        <p style="color: blue;">Cascading Style Sheets (CSS) is used to format the layout of a webpage.</p>
+    </div>
+
+    <!-- Hàng 2: Class p2 - màu đỏ -->
+    <div>
+        <p class="p2">With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p>
+    </div>
+
+    <!-- Hàng 3: Class p3 - khung có vạch cam bên trái, chữ Tip/cascading màu cam -->
+    <div>
+        <p class="p3"><a>Tip:</a> The word <a>cascading</a> means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!</p>
+    </div>
+
+</body>
+</html>
