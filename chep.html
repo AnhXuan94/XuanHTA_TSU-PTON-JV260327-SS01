@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Local Storage</title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>In Love</th>
+                <th>GENDER</th>
+                <th>DOB</th>
+                <th>TOOLS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>1</td>
+                <td>-2</td>
+                <td>aasdsa</td>
+                <td>22</td>
+                <td>có</td>
+                <td>nam</td>
+                <td>11/11/11</td>
+                <td>
+                    <button>xóa</button>
+                    <button>sửa</button>
+                </td>
+            </tr> -->
+        
+        </tbody>
+    </table>
+
+    <form onsubmit="save(event)" action="" style="border: 1px, solid black;">
+        <p id="form_title">Thêm Sinh Viên</p>
+        <input type="text" placeholder="name" name="name">
+        <br>
+        <input type="text" placeholder="age" name="age">
+        <br>
+        Trong tình yêu: Có <input type="radio" name="isInLove"> Không <input type="radio" name="isInLove">
+        <br>
+        <select name="gender">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+        </select>
+        <br>
+        <input type="date" name="dob">
+        <button>lưu</button>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
