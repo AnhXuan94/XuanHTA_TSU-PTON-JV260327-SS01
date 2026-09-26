@@ -125,7 +125,7 @@ public class Main {
             System.out.println("Khong co du lieu.");
             return;
         }
-        // Format bang cho dep
+
         System.out.printf("%-5s %-20s %-10s %-18s %-20s %-6s %-10s%n",
                 "ID", "Ten Bang", "Ma NV", "Ngay Cap", "Truong", "Nam", "Xep Loai");
         System.out.println("-".repeat(100));

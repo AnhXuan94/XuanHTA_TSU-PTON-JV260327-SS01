@@ -25,7 +25,7 @@ public class InputUtil {
         }
     }
 
-    // Doc emp_id (VARCHAR 15)
+    // emp_id
     public static String readEmpId(Scanner sc) {
         while (true) {
             System.out.print("Ma nhan vien (max 15 ky tu): ");
@@ -40,7 +40,7 @@ public class InputUtil {
         }
     }
 
-    // Doc nam cap bang (INT)
+    // nam cap bang
     public static int readDegreeYear(Scanner sc) {
         while (true) {
             System.out.print("Nam cap bang (VD: 2023): ");

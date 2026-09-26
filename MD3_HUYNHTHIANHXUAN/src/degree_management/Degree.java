@@ -11,7 +11,6 @@ public class Degree {
     private int degreeYear;
     private String degreeClassification;
 
-    // Constructor cho luc doc tu DB (co ID)
     public Degree(int degreeId, String degreeName, String empId, Timestamp degreeDate,
                   String schoolName, int degreeYear, String degreeClassification) {
         this.degreeId = degreeId;
@@ -23,13 +22,11 @@ public class Degree {
         this.degreeClassification = degreeClassification;
     }
 
-    // Constructor cho luc them moi (chua co ID)
     public Degree(String degreeName, String empId, Timestamp degreeDate,
                   String schoolName, int degreeYear, String degreeClassification) {
         this(0, degreeName, empId, degreeDate, schoolName, degreeYear, degreeClassification);
     }
 
-    // Getters
     public int getDegreeId() { return degreeId; }
     public String getDegreeName() { return degreeName; }
     public String getEmpId() { return empId; }

@@ -45,7 +45,7 @@ public class DegreeDAO {
         }
     }
 
-    // 3. Tim theo emp_id (Dung de check ton tai truoc khi update/delete)
+    // 3. Tim theo emp_id
     public List<Degree> getByEmpId(String empId) throws SQLException {
         List<Degree> list = new ArrayList<>();
         String sql = "{CALL sp_get_degrees_by_emp_id(?)}";
@@ -100,10 +100,8 @@ public class DegreeDAO {
         return list;
     }
 
-    // Helper: Tim 1 bang cap theo ID de hien thi truoc khi sua/xoa
+    // Tim 1 bang cap theo ID de hien thi truoc khi sua/xoa
     public Degree findById(int id) throws SQLException {
-        // Vi de bai chi yeu cau SP tim theo emp_id, nen ta viet query truc tiep cho ID
-        // Hoac ban co them SP sp_get_degree_by_id neu muan chuan 100% SP
         String sql = "SELECT * FROM degrees WHERE degree_id = ?";
         try (Connection conn = DBConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
